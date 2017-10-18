@@ -10,4 +10,6 @@ object visualize extends js.Object {
             callback: js.UndefOr[js.Function1[JRSClient, Unit]] = js.undefined,
             errorBack: js.UndefOr[js.Function1[JRSClient, Unit]] = js.undefined,
             always: js.UndefOr[js.Function1[JRSClient, Unit]] = js.undefined): Unit = js.native
+
+  def config(properties: JRSProps): Unit = js.native
 }
